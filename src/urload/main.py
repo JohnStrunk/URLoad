@@ -38,6 +38,7 @@ from urload.commands.set_option import SetOptionCommand
 from urload.commands.sort import SortCommand
 from urload.commands.tail import TailCommand
 from urload.commands.timeformat import TimeformatCommand
+from urload.commands.title import TitleCommand
 from urload.commands.uniq import UniqCommand
 from urload.settings import AppSettings
 from urload.url import URL
@@ -133,6 +134,7 @@ def build_command_objs() -> dict[str, Command]:
     command_objs["sort"] = SortCommand()
     command_objs["tail"] = TailCommand()
     command_objs["timeformat"] = TimeformatCommand()
+    command_objs["title"] = TitleCommand()
     command_objs["uniq"] = UniqCommand()
     return command_objs
 
